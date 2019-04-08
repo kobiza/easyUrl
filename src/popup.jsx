@@ -13,3 +13,6 @@ changeColor.onclick = function(element) {
             {code: 'document.body.style.backgroundColor = "' + color + '";'});
     });
 };
+
+
+// use react to render popup content

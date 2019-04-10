@@ -1,0 +1,57 @@
+html, body {
+    /*width: 300px;*/
+    /*height: 200px;*/
+
+    margin: 0;
+}
+
+.edit-comp-panel {
+    width: 180px;
+    /*height: 200px;*/
+    background: #eff1f2;
+}
+
+.edit-comp-panel .section {
+    margin: 10px 0;
+    background: white;
+}
+
+.edit-comp-panel .section .content{
+    margin: 10px;
+}
+
+.edit-comp-panel .section header {
+    display: inline-block;
+    padding: 5px 0 0 14px;
+    /*text-transform: uppercase;*/
+    font-size: 12px;
+    /*font-family: HelveticaNeueW01-75Bold;*/
+    line-height: 30px;
+    width: 100%;
+    border-top: 6px solid #eff1f2;
+}
+
+.size-container {
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: 35px max-content;
+    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.size-input {
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #7fccf7;
+    height: 24px;
+    padding-left: 10px;
+    width: 66px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.checkbox-label {
+    margin-left: 10px;
+}

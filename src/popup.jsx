@@ -1,18 +1,7 @@
-let changeColor = document.getElementById('changeColor');
+'use strict'
 
-chrome.storage.sync.get('color', function(data) {
-    changeColor.style.backgroundColor = data.color;
-    changeColor.setAttribute('value', data.color);
-});
+import React from 'react';
+import {render} from 'react-dom';
+import App from './components/App.jsx';
 
-changeColor.onclick = function(element) {
-    let color = element.target.value;
-    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        chrome.tabs.executeScript(
-            tabs[0].id,
-            {code: 'document.body.style.backgroundColor = "' + color + '";'});
-    });
-};
-
-
-// use react to render popup content
+render(<App/>, document.querySelector('#root'));

@@ -9,6 +9,12 @@
     "build:full": "node scripts/buildFull"
   },
   "author": "",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
